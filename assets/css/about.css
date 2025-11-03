@@ -37,14 +37,8 @@ body {
   font-weight: 1000;
   color: blue;
   text-decoration: none;
-  opacity: 0;
-  animation: FadeInDown 1s ease forwards 0.5s;
 }
-@keyframes FadeInDown {
-  to {
-    opacity: 1;
-  }
-}
+
 .logo:hover {
   color: rgb(123, 194, 123);
 }
@@ -62,13 +56,6 @@ body {
   list-style: none;
   display: flex;
   gap: 2rem;
-  opacity: 0;
-  animation: FadeInUp 1s ease forwards 0.4s;
-}
-@keyframes FadeInUp {
-  to {
-    opacity: 1;
-  }
 }
 
 .nav-links a {
@@ -100,13 +87,6 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  opacity: 0;
-  animation: FadeInUp 1s ease forwards 0.4s;
-}
-@keyframes FadeInUp {
-  to {
-    opacity: 1;
-  }
 }
 .search-bar input {
   padding: 0.5rem 0.8rem;
