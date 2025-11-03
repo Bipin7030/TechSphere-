@@ -1,0 +1,178 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f9;
+  color: #111;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 50px 80px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.tech{
+  text-align: center;
+  background: linear-gradient(90deg, rgb(214, 214, 255), rgb(207, 249, 255));
+}
+
+.explore-intro h1 {
+  color: #00C9A7; 
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.explore-intro p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.tech-growth {
+  text-align: center;
+}
+
+.tech-growth h2 {
+  color: #007CF0; 
+  margin-bottom: 20px;
+}
+
+.tech-growth img {
+  width: 60%;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  margin-top: 20px;
+}
+
+.tech-growth p {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 15px;
+}
+
+.tech-video h2 {
+  text-align: center;
+  color: #00C9A7;
+  margin-bottom: 20px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.video-container iframe {
+  width: 100%;
+  max-width: 700px;
+  height: 400px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+}
+
+.tech-billionaires {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 60px 40px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+
+.tech-billionaires h2 {
+  text-align: center;
+  color: #00C9A7;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.billionaire-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.billionaire-card {
+  background: #fdfdfd;
+  border-radius: 12px;
+  text-align: center;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+}
+
+.billionaire-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.billionaire-card img {
+  width: 100%;
+  height: 250px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.billionaire-card h3 {
+  color: #007CF0;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.billionaire-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+.tech-stats {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 50px 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.tech-stats h2 {
+  color: #00C9A7;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  background-color: #fdfdfd;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+  flex: 1 1 200px;
+  min-width: 180px;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 18px rgba(0,0,0,0.1);
+}
+
+.stat-card h3 {
+  color: #007CF0;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.stat-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.4;
+}

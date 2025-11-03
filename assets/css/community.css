@@ -1,0 +1,96 @@
+:root {
+    --primary-color: #00C9A7;
+    --secondary-color: #007CF0;
+    --bg-color: #f4f7f9;
+    --card-bg: #ffffff;
+    --text-color: #111111;
+    --border-color: #dce1e7;
+    --hover-color: #00b389;
+    --button-color: #007CF0;
+    --button-hover: #005bb5;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, #9faff5, #9ce3ed);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.community-container {
+    background: linear-gradient(180deg, #dadffb, #ade9f9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+.community-header h1 {
+    color: blue;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.community-header p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.community-form .form-group {
+    margin-bottom: 20px;
+}
+
+.community-form label {
+    display: block;
+    margin-bottom: 6px;
+    color: black;
+    font-weight: 500;
+}
+
+.community-form input,
+.community-form select,
+.community-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 14px;
+    transition: border 0.3s ease;
+}
+
+.community-form input:focus,
+.community-form select:focus,
+.community-form textarea:focus {
+    border-color: rgb(255, 255, 255);
+    outline: none;
+}
+
+.community-form button {
+    width: 30%;
+    padding: 14px;
+    background-color: rgb(79, 79, 240);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 80px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 150px;
+}
+
+.community-form button:hover {
+    background-color: blue;
+}

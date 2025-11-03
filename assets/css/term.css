@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #111;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+
+.header {
+  background-color: #007CF0;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.header p {
+  margin-top: 5px;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.policy-section {
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+}
+
+.policy-section h2 {
+  color: #007CF0;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.policy-section p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #333;
+}

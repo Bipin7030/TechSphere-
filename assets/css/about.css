@@ -1,0 +1,331 @@
+:root {
+  --primary-color: #007CF0;
+  --secondary-color: #00C9A7;
+  --bg-light: #F9FAFC;
+  --text-dark: #1A1A1A;
+  --text-gray: #555;
+  --card-bg: #FFFFFF;
+  --shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  color: black;
+  line-height: 1.5;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 1000;
+  color: blue;
+  text-decoration: none;
+}
+.logo:hover {
+  color:rgb(123, 194, 123);
+}
+
+.logo::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #72c4ed;
+    margin: 0.1rem auto 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  position: relative;
+ 
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: blue;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: blue;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.search-bar input {
+  padding: 0.5rem 0.8rem;
+  border: 2px solid #68c2ad;
+  border-radius: 25px;
+  outline: none;
+}
+
+.search-bar input:focus {
+  border-color: blue;
+  box-shadow: black 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.search-bar button {
+  background: blue;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 0.5rem 0.7rem;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background: rgb(91, 158, 111);
+}
+
+
+.about-hero {
+  background: linear-gradient(180deg, #bac7fd, #d9f7fb);
+  text-align: center;
+  padding: 5rem 1rem;
+  border-bottom: 1px solid #fdfbfb;
+}
+
+.about-hero h1 {
+  font-size: 2.8rem;
+  color: blue;
+  margin-bottom: 1rem;
+}
+
+.about-hero p {
+ color: rgb(75, 71, 71);
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.primary-btn {
+  background: blue;
+  color: #fff;
+  box-shadow: 0 8px 15px rgba(7, 2, 173, 0.381);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.primary-btn:hover {
+  background: rgb(36, 68, 36);
+  transform: translateY(-2px);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgb(53, 52, 52);
+}
+
+.secondary-btn {
+  background: transparent;
+  border: 2px solid blue;
+  color: blue;
+}
+
+.secondary-btn:hover {
+  background: blue;
+  color: #fff;
+}
+
+.mission-section {
+  padding: 4rem 0rem;
+  text-align: center;
+  background: #fff;
+}
+
+.mission-section h2 {
+  font-size: 2rem;
+  color: blue;
+  margin-bottom: 2rem;
+}
+
+.mission-section p {
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  color: rgb(80, 76, 76);
+}
+
+.mission-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.mission-card {
+  background: rgb(252, 252, 252);
+  padding: 2rem 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.381);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 40px rgb(49, 49, 49);
+}
+
+.mission-card h3 {
+  color: rgb(48, 198, 48);
+  margin-bottom: 0.5rem;
+}
+
+.mission-card p {
+  color: rgb(80, 76, 76);
+  font-size: 0.95rem;
+}
+
+.team-section {
+  padding: 7rem 1rem;
+  text-align: center;
+}
+
+.team-section h2 {
+  font-size: 2rem;
+  color: rgb(0, 0, 198);
+  margin-bottom: 0.4rem;
+}
+
+.team-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.team-card {
+  background:rgb(252, 252, 252);
+  border-radius: 15px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.381);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 40px rgb(49, 49, 49);
+}
+
+.team-card img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 0.1rem;
+}
+
+.team-card h4 {
+  color: black;
+  margin-bottom: 0.3rem;
+}
+
+.team-card p {
+  color: rgb(80, 76, 76);
+  font-size: 0.95rem;
+}
+
+.join-section {
+  background: linear-gradient(135deg, #007CF0, #00C9A7);
+  color: #fff;
+  text-align: center;
+  padding: 6rem 1rem;
+}
+
+.join-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 2rem;
+}
+
+.subscribe-form input {
+  padding: 0.8rem 1rem;
+  border-radius: 30px;
+  border: none;
+  width: 250px;
+}
+.subscribe-form input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(18, 14, 14, 0.5);
+}
+.subscribe-form button {
+  border: none;
+}
+
+.subscribe-form button:hover {
+  background: #33a32d;
+  transform: scale(1.05);
+}
+footer {
+  background: #ffffff;
+  color: #000000;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-links a {
+  color: #363636;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: blue;
+}
