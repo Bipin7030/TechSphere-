@@ -150,14 +150,14 @@ body {
 }
 
 .primary-btn {
-  background: blue;
+  background: rgb(0, 17, 255);
   color: #fff;
    box-shadow: 0 8px 20px rgba(7, 2, 173, 0.381);
  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .primary-btn:hover {
-  background: rgb(36, 68, 36);
+  background: rgb(24, 49, 176);
   transform: translateY(-2px);
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgb(53, 52, 52);
