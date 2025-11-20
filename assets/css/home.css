@@ -19,6 +19,9 @@ body {
   color: black;
   line-height: 1.5;
 }
+html{
+  scroll-behavior: smooth;
+}
 .container {
   width: 90%;
   max-width: 1200px;

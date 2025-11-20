@@ -12,6 +12,9 @@ body {
   max-width: 1000px;
   margin: auto;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 .header {
   background: linear-gradient(180deg, #bac7fd, #d9f7fb);

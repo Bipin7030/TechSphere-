@@ -9,7 +9,9 @@
   --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   --transition: all 0.3s ease;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;

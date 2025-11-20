@@ -25,7 +25,9 @@ body {
     min-height: 100vh;
     padding: 20px;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 .community-container {
     background: linear-gradient(180deg, #dadffb, #ade9f9);
     padding: 40px;
